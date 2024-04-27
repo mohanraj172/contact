@@ -40,7 +40,9 @@
             event.preventDefault();
 
             const formData= new FormData(formClass);
-            console.log(formData.get('name'));
+            //console.log(formData.get('name')); just to print the name
+            const Data =Object.formEntities(formData);
+            
         });
 
     </script>
