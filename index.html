@@ -41,8 +41,8 @@
 
             const formData= new FormData(formClass);
             //console.log(formData.get('name')); just to print the name
-            const Data =Object.formEntities(formData);
-            
+            const Data =Object.fromEntries(formData);
+            console.log(Data);
         });
 
     </script>
