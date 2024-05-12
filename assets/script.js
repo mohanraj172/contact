@@ -11,3 +11,9 @@ fetch('https://jsonplaceholder.typicode.com/posts/1')
 function displayData(data) {
     console.log(data);
 }
+
+const storedData = localStorage.getItem('fetchedData');
+if (storedData) {
+    const parsedData = JSON.parse(storedData);
+    displayData(parsedData);
+}
